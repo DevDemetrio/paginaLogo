@@ -46,4 +46,75 @@ img {
   margin: 0 auto;
 }
 
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-content: center;
+}
+@media (max-width: 1000px) {
+  .introduction {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .introduction {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+@media (max-witdh: 300px) {
+  .introduction img {
+    display: none;
+  }
+}
+.introduction h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+@media (max-width: 1000px) {
+  .introduction h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .introduction h1 {
+    font-size: 3rem;
+  }
+}
+.introduction h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  top: -20px;
+  left: -40px;
+  z-index: -1;
+}
+@media (max-width: 1000px) {
+  .introduction h1::before {
+    width: 40px;
+    height: 20px;
+    top: -1px;
+    left: -20px;
+  }
+}
+@media (max-width: 800px) {
+  .introduction h1::before {
+    width: 40px;
+    height: 20px;
+    top: -1px;
+    left: -20px;
+  }
+}
+.introduction p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
 /*# sourceMappingURL=styles.css.map */
