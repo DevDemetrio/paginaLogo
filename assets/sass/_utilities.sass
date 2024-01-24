@@ -1,12 +1,11 @@
 @mixin reset
 
-header, nav, ul, main, section, p, h1, h2, aside, div, span, footer
+header, nav, ul, main, section, p, h1, h2, h3,aside, div, span, footer
     margin: 0
     padding: 0
 
 ul
     list-style: none
-
 
 a
     text-decoration: none
@@ -30,4 +29,8 @@ img
     
 @mixin mobile__menor
     @media (max-witdh: 300px)
+        @content
+
+@mixin experiencia__mobile
+    @media (max-witdh: 800px)
         @content
