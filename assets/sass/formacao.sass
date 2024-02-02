@@ -1,0 +1,72 @@
+.formacao
+    background: #3d3d3d
+    color: #ffff
+
+
+.formacao-container
+    max-width: 1200px
+    padding: 40px 20px
+    margin: 0 auto
+    display: grid
+    grid-template-columns: 1fr 2fr
+    gap: 100px 
+    position: relative 
+
+.formacao-container::after
+    content: ''
+    display: block
+    width: 130px
+    height: 100px
+    background: url('../img/detalhe.svg') no-repeat center
+    position: absolute
+    bottom: -50px
+
+
+.subtitulo
+    color: #a3a3a4
+    max-width: 5ch
+
+.formacao-texto
+    font-size: 1.5rem
+    lene-height: 1.33
+    margin-bottom: 60px
+    color: #a3a3a4
+
+    & strong
+        color: #ffff
+
+.faculdade-lista
+    display: flex
+    flex-wrap: wrap
+    gap: 20px
+    margin-bottom: 60px
+
+.faculdade
+    flex: 1
+    background: #0000
+    padding: 20px
+    border-radius: 4px
+
+.faculdade-tipo
+    font-size: .875rem
+    text-transform: uppercase
+    color: #a3a3a3
+
+.faculdade-curso::before
+    content: ""
+    display: block
+    width: 4px
+    height: 20px
+    background: linear-gradient(#b6f829, #67dd0a)
+    position: absolute
+    left: -4px
+
+.formacao-extra
+
+    & h3 
+        font-size: 0.875rem
+        lene-height: 1.4
+        color: #8f8f8f
+        text-transform: uppercase
+        margin-bottom: 30px
+        position: relative
